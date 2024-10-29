@@ -281,11 +281,12 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Set<String> createStringSet(List<String> inputList) {
         // Create a new Set of strings
-        Set<String> stringSet = new Set<String>();
+        Set<String> stringSet = new Set<String>(); 
 
-        //add strings to the set
-
-        return null; // Replace null with the variable you used to store the result
+        for (String str : inputList){
+            StringSet.add(str);   //add strings to the set
+        }
+        return stringSet; 
     }
 
     /**
@@ -296,13 +297,18 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer sumPositiveIntegers() {
         List<Integer> numbers = new List<Integer>{-1, 2, -3, 4, -5, 6}; //DO NOT CHANGE
-
-        // Loop through the list of integers
-            // if the number is negative skip this iteration
-        
-
-        return null; // Replace null with the variable you used to store the result
+        Integer sum = 0;
+        for (Integer num : numbers){// Loop through the list of integers
+            if (math.mod(num,2) == 0){// if the number is negative skip this iteration
+                sum += num;
+            }
+            else{
+                continue;
+            }
+        }
+        return sum; // Replace null with the variable you used to store the result
     }
+
 
     /**
      * Question 16
