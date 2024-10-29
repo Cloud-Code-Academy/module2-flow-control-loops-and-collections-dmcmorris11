@@ -87,7 +87,7 @@ public with sharing class FlowControlLoopsCollections {
             return 'Positive';
         }else if (a < 0){
             return 'Negative';
-        }else if (a == 0){
+        }else {
             return 'Zero';
         }
     }
@@ -228,15 +228,16 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static List<Integer> createAndPopulateList() {
         // Create a new list of integers
+       List<Integer> myList = new List<Integer>();
+        // Add the numbers 1, 2, and 3 to the list
+        myList.add(1);
+        myList.add(2);
+        myList.add(3);
+        return myList;
+        
+    }           
+    
 
-        // Add the integers 1, 2, and 3 to the list
-        // add 1
-        // add 2
-        // add 3
-
-        // Return the populated list
-        return null; // Replace null with the variable you used to store the result
-    }
 
     /**
      * Question 12
